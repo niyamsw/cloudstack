@@ -28,7 +28,7 @@ permissions:
 
 jobs:
   build:
-    runs-on: ubuntu-22.04
+    runs-on: S390X
 
     steps:
       - uses: actions/checkout@v5
