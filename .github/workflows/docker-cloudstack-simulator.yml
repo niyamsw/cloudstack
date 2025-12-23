@@ -18,7 +18,6 @@
 name: Docker Image Build
 
 on: [push, pull_request]
-
 permissions:
   contents: read
 
