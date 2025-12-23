@@ -53,7 +53,7 @@ jobs:
         run: echo "FULL_TAG=$(if [ "${{ secrets.DOCKER_REGISTRY }}" = "" ];then echo ${DOCKER_REPOSITORY}/cloudstack-simulator:${TAG};else echo ${{ secrets.DOCKER_REGISTRY }}/${DOCKER_REPOSITORY}/cloudstack-simulator:${TAG};fi)" >> $GITHUB_ENV
 
       - name: Build the Docker image for cloudstack-simulator
-        run: cd tools/docker && docker build ../.. --file Dockerfile --tag ${FULL_TAG}
+        run: cd tools/docker && docker build ../.. --file Dockerfile.s390x --tag ${FULL_TAG}
 
       - name: Push Docker image to Docker Registry
         run: docker push ${FULL_TAG}
