@@ -28,7 +28,7 @@ permissions:
 
 jobs:
   build:
-    if: github.repository == 'apache/cloudstack'
+    if: github.repository == 'niyamsw/cloudstack'
     runs-on: S390X
 
     strategy:
