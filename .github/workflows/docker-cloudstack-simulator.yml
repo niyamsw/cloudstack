@@ -17,13 +17,7 @@
 
 name: Docker Image Build
 
-on:
-  push:
-    branches:
-      - main
-    tags:
-      - 4.*
-      - 5.*
+on: [push, pull_request]
 
 permissions:
   contents: read
