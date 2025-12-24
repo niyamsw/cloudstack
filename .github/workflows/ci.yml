@@ -255,7 +255,7 @@ jobs:
       - name: Install Python dependencies
         run: |
           rustc --version
-          python3 -m pip install --user --upgrade urllib3 lxml paramiko nose texttable ipmisim pyopenssl pycryptodome mock flask netaddr pylint pycodestyle six astroid pynose
+          python3 -m pip install --user --upgrade maturin urllib3 lxml paramiko nose texttable ipmisim pyopenssl pycryptodome mock flask netaddr pylint pycodestyle six astroid pynose
 
       - name: Install jacoco dependencies
         run: |
